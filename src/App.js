@@ -3,7 +3,7 @@ import "./App.css";
 function App(props) {
   return (
     <div className="todoapp stack-large">
-      <h1>TodoMatic</h1>
+      <h1>My ToDo List</h1>
       <form>
         <h2 className="label-wrapper">
           <label htmlFor="new-todo-input" className="label__lg">
@@ -38,7 +38,7 @@ function App(props) {
           <span className="visually-hidden"> tasks</span>
         </button>
       </div>
-      <h2 id="list-heading">3 tasks remaining</h2>
+      <h2 id="list-heading">4 tasks remaining</h2>
       <ul
         role="list"
         className="todo-list stack-large stack-exception"
@@ -48,7 +48,7 @@ function App(props) {
           <div className="c-cb">
             <input id="todo-0" type="checkbox" defaultChecked={false} />
             <label className="todo-label" htmlFor="todo-0">
-              Eat
+              Study
             </label>
           </div>
           <div className="btn-group">
@@ -64,7 +64,7 @@ function App(props) {
           <div className="c-cb">
             <input id="todo-1" type="checkbox" />
             <label className="todo-label" htmlFor="todo-1">
-              Sleep
+              Code
             </label>
           </div>
           <div className="btn-group">
@@ -89,6 +89,22 @@ function App(props) {
             </button>
             <button type="button" className="btn btn__danger">
               Delete <span className="visually-hidden">Repeat</span>
+            </button>
+          </div>
+        </li>
+        <li className="todo stack-small">
+          <div className="c-cb">
+            <input id="todo-1" type="checkbox" />
+            <label className="todo-label" htmlFor="todo-1">
+              Eat
+            </label>
+          </div>
+          <div className="btn-group">
+            <button type="button" className="btn">
+              Edit <span className="visually-hidden">Sleep</span>
+            </button>
+            <button type="button" className="btn btn__danger">
+              Delete <span className="visually-hidden">Sleep</span>
             </button>
           </div>
         </li>
